@@ -19,13 +19,13 @@ public class TaskListAdapter extends ArrayAdapter<Task> {
 
     public TaskListAdapter(Context context, int resource, List<Task> objects) {
         super(context, resource, objects);
-        //Initialize instance variables
+
         mContext = context;
         mResourceId = resource;
         mAllTasks = objects;
     }
 
-    //Override the getView method, this method inflates the view
+    //Override the getView method to inflate the view
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 

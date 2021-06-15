@@ -2,11 +2,12 @@ package edu.miracostacollege.todo2day.Model;
 
 public class Task {
 
-    //Declare member variables
+    //Member Variables
     private long mId;
     private String mDescription;
     private boolean mIsDone;
 
+    //Constructors
     public Task(long id, String description, boolean isDone) {
         mId = id;
         mDescription = description;
@@ -17,6 +18,7 @@ public class Task {
         this(-1, description, false);
     }
 
+    //Accessors/Mutators
     public long getId() {
         return mId;
     }
@@ -41,6 +43,7 @@ public class Task {
         mIsDone = done;
     }
 
+    //toString
     @Override
     public String toString() {
         return "Task{" +

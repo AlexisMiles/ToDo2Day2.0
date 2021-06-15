@@ -57,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
         mTaskListAdapter.notifyDataSetChanged();
     }
 
-    //Ctrl + o => override methods
     @Override
     protected void onDestroy() {
         super.onDestroy();
